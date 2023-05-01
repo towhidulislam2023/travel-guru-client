@@ -8,8 +8,8 @@ const Hotel = () => {
     const hotelDatas=useLoaderData()
     return (
         <div className='md:flex'>
-           <div className='h-screen md:w-[50%]'>
-            <div className='md:p-24 '>
+           <div className=' md:w-[50%]'>
+            <div className='md:p-24 p-4 '>
                     {
                         hotelDatas&& hotelDatas.map(hotelData => <HotelData hoteldata={hotelData}  key={hotelData._id }></HotelData>)
                     }

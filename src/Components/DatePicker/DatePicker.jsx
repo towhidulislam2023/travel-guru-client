@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 const DatePicker = () => {
     const [destinationDescripsion, setDestinationDescription] = useContext(destinationDataContext)
     return (
-        <div>
+        <div className='md:mr-40'>
             <div className='grid md:grid-cols-12'>
                 <div className=' col-span-4 md:mt-36 pl-14 pr-7'>
                     <PlaceDescription destinationDescripsion={destinationDescripsion}></PlaceDescription>
@@ -33,7 +33,7 @@ const DatePicker = () => {
                                 <option>India</option>
                             </select>
                             <div className='w-fit'>
-                                <RangeDatePicker
+                                <RangeDatePicker 
                                     startDate={new Date(2020, 0, 15)}
                                     endDate={new Date(2020, 1, 1)}
                                     startDatePlaceholder="From"
